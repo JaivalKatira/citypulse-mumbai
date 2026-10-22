@@ -16,3 +16,8 @@ __pycache__/
 
 # Nested git folder in reference repo
 _reference_repo/.git
+
+# Environment files
+.env.local
+*.local
+

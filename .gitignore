@@ -1,0 +1,18 @@
+# Dependencies
+node_modules
+client/node_modules
+client/dist
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE & Logs
+.gemini
+.system_generated
+*.log
+.DS_Store
+
+# Nested git folder in reference repo
+_reference_repo/.git

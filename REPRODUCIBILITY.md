@@ -33,9 +33,9 @@ Open **`http://localhost:5173/`** in your browser.
 
 ---
 
-## 2. Re-Running the Analytical & ML Pipeline (Optional)
+## 2. Re-Running the Analytical Pipeline (Optional)
 
-To verify that the dataset, feature engineering, and model benchmark are genuine and fully reproducible from raw records:
+To verify the analytical calculations, formula reverse-engineering, and benchmark baseline from raw records:
 
 ```bash
 # In the repository root
@@ -50,10 +50,11 @@ Missing values audit: 0 total nulls across dataset.
 
 --- RUNNING STATISTICAL EDA & EXTRACTING 3 ACTIONABLE FINDINGS ---
 
---- TRAINING & VALIDATING MODELS WITH OUT-OF-SAMPLE CROSS-VALIDATION ---
-Baseline Metrics: {'mae': 0.394, 'rmse': 0.512, 'r2': 0.994, 'spearman_rho': 0.996}
-Ridge Regressor Metrics: {'mae': 0.013, 'rmse': 0.018, 'r2': 1.0, 'spearman_rho': 1.0}
-Random Forest Regressor Metrics: {'mae': 0.245, 'rmse': 0.356, 'r2': 0.997, 'spearman_rho': 0.998}
+--- DECOMPOSING FORMULA-DERIVED COMPOSITE INDICATOR & BENCHMARKING ---
+Index Decomposition R^2: 1.00000000 (Max absolute residual: 8.86e-12)
+Exact Formula: risk_index = 6.2726 + 0.1136*crimes - 0.000072*pop_dense + 0.4013*pol_dense + 0.9224*uhi - 0.0870*internet
+Naive Per-Capita Baseline Metrics: {'mae': 2.283, 'rmse': 3.23, 'r2': 0.754, 'spearman_rho': 0.879}
+Composite Indicator Fidelity Metrics: {'mae': 0.0, 'rmse': 0.0, 'r2': 1.0, 'spearman_rho': 1.0}
 
 --- EXPORTING CURATED JSON FOR WEB APPLICATION ---
 Successfully exported curated data to client/public/data/citypulse_mumbai_curated.json
@@ -65,8 +66,8 @@ Saved cleaned benchmark CSV to citypulse_mumbai_cleaned.csv
 ## 3. Compliance Verification Checklist for Technical Judges
 
 - [x] **Zero Paid APIs:** Uses OpenStreetMap (ODbL) and CartoDB Dark Matter public tiles. No Google Maps, Mapbox, or OpenAI paid billing keys required.
-- [x] **Zero Data Leakage:** 20% holdout split stratified by risk severity; scalers and model estimators fitted strictly on training partition.
-- [x] **Benchmark Baseline Included:** Naive Crime-Population heuristic formally compared against Ridge and Random Forest models.
-- [x] **Decision Support vs. Data Display:** Features a live **What-If Policy Simulator** allowing dynamic recalculation of risk scores under varying municipal investments.
-- [x] **Uncertainty & Explainability:** Every locality displays 95% Confidence Intervals and SHAP-inspired factor attribution bars.
-- [x] **Responsible AI Compliance:** Prominent disclaimers regarding prototype status, reporting friction bias, and correlation vs. causation.
+- [x] **Analytical Integrity:** Avoids circular 99.7% ML claims by mathematically decomposing the composite indicator formula ($R^2=1.000$) and benchmarking it against an independent Naive baseline ($R^2=0.754, \rho=0.879$).
+- [x] **Benchmark Baseline Included:** Transparent Naive Per-Capita Crime baseline ($\text{crimes}/\text{pop} \times 10,000$) formally benchmarked against the multi-criteria indicator.
+- [x] **Decision Support vs. Data Display:** Features an interactive **Municipal Planning Scenario Explorer** allowing heuristic sensitivity testing of capital outlays (auxiliary chowkis, smart LED lighting).
+- [x] **Uncertainty & Explainability:** Every locality displays an analytical 95% Confidence Interval ($\pm 0.70$) and closed-form factor attribution bars.
+- [x] **Responsible AI & Provenance Disclaimers:** Prominent emergency disclaimers (Police 100/112, Women Helpline 1091), hypothetical simulator labels, reporting friction bias analysis, and clear distinction between traceable OSM entities and demonstration compilation records.

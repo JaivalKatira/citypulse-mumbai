@@ -209,6 +209,19 @@ export default function App() {
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
       
+      {/* ── TOP DISCLAIMER BANNER (CITIZEN SAFETY & PLANNING PROTOTYPE) ── */}
+      <div style={{ background: '#7f1d1d', color: '#fecaca', padding: '8px 24px', fontSize: '0.78rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', borderBottom: '1px solid #991b1b', flexWrap: 'wrap', gap: 8 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+          <AlertTriangle size={15} color="#fca5a5" />
+          <span><b>Administrative Planning Prototype:</b> CityPulse is an indicator demonstration tool for municipal resource allocation, NOT an emergency dispatch system.</span>
+        </div>
+        <div style={{ display: 'flex', gap: 14, fontFamily: 'var(--font-mono)', fontSize: '0.74rem' }}>
+          <span>Emergency: <b>112</b></span>
+          <span>Police: <b>100</b></span>
+          <span>Women Helpline: <b>1091</b></span>
+        </div>
+      </div>
+
       {/* ── TOP NAVIGATION BAR ── */}
       <header className="app-header">
         <div className="app-brand">
@@ -233,7 +246,7 @@ export default function App() {
             className={`nav-btn ${activeTab === 'simulator' ? 'active' : ''}`}
             onClick={() => setActiveTab('simulator')}
           >
-            <Sliders size={16} /> What-If Policy Lab
+            <Sliders size={16} /> Planning Simulator
           </button>
           <button 
             className={`nav-btn ${activeTab === 'eda' ? 'active' : ''}`}
@@ -245,7 +258,7 @@ export default function App() {
             className={`nav-btn ${activeTab === 'benchmark' ? 'active' : ''}`}
             onClick={() => setActiveTab('benchmark')}
           >
-            <BarChart3 size={16} /> Model Benchmark (100 Pts)
+            <BarChart3 size={16} /> Method & Baseline
           </button>
           <button 
             className={`nav-btn ${activeTab === 'data' ? 'active' : ''}`}
@@ -310,13 +323,13 @@ export default function App() {
 
           <div className="glass-panel metric-card">
             <div className="metric-label">
-              <span>Model Integrity</span>
+              <span>Analytical Method</span>
               <Sparkles size={15} color="#818cf8" />
             </div>
-            <div className="metric-val" style={{ color: '#818cf8' }}>
-              R² {benchmark.models[2].r2}
+            <div className="metric-val" style={{ color: '#818cf8', fontSize: '1.4rem' }}>
+              Multi-Criteria
             </div>
-            <div className="metric-sub">Random Forest (MAE {benchmark.models[2].mae})</div>
+            <div className="metric-sub">Transparent 0–30 Priority Scale</div>
           </div>
         </div>
 
@@ -359,6 +372,18 @@ export default function App() {
                   Showing <b>{filteredLocalities.length}</b> pins
                 </div>
               </div>
+
+              {/* Empty state overlay when search has 0 results */}
+              {filteredLocalities.length === 0 && (
+                <div style={{ position: 'absolute', top: '75px', left: '20px', right: '20px', zIndex: 600, background: 'rgba(15, 23, 42, 0.96)', border: '1px solid rgba(244, 63, 94, 0.4)', borderRadius: 10, padding: 20, textAlign: 'center', boxShadow: '0 8px 30px rgba(0,0,0,0.8)' }}>
+                  <AlertTriangle size={24} color="#f43f5e" style={{ marginBottom: 6 }} />
+                  <p style={{ fontSize: '0.9rem', color: '#f8fafc', fontWeight: 700 }}>No localities found matching "{searchQuery}"</p>
+                  <p style={{ fontSize: '0.78rem', color: 'var(--text-muted)', marginTop: 2 }}>Try searching for a different ward or clear the active filters.</p>
+                  <button onClick={() => { setSearchQuery(''); setZoneFilter('all'); setTierFilter('all'); }} style={{ marginTop: 10, background: '#0284c7', color: '#fff', border: 'none', padding: '6px 16px', borderRadius: 6, fontSize: '0.78rem', fontWeight: 600, cursor: 'pointer' }}>
+                    Reset Search & Filters
+                  </button>
+                </div>
+              )}
 
               {/* Map Canvas */}
               <div ref={mapContainerRef} className="map-container" />
@@ -565,9 +590,9 @@ export default function App() {
                   <Sliders size={20} color="#38bdf8" />
                 </div>
                 <div>
-                  <h3 style={{ fontSize: '1.2rem', fontWeight: 800 }}>Municipal Policy & Resource Simulator</h3>
+                  <h3 style={{ fontSize: '1.2rem', fontWeight: 800 }}>Municipal Planning Scenario Explorer (Hypothetical)</h3>
                   <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
-                    Simulate how deploying infrastructure interventions reduces locality risk score.
+                    Explore hypothetical planning trade-offs by testing adjustments to police chowkis and streetlighting.
                   </p>
                 </div>
               </div>
@@ -575,7 +600,7 @@ export default function App() {
               {/* Target Locality Selector */}
               <div style={{ marginBottom: 20 }}>
                 <label style={{ display: 'block', fontSize: '0.78rem', fontWeight: 700, textTransform: 'uppercase', color: 'var(--text-muted)', marginBottom: 6 }}>
-                  Target Locality for Intervention
+                  Target Locality for Scenario
                 </label>
                 <select 
                   value={selectedLocality ? selectedLocality.locality : ''}
@@ -596,7 +621,7 @@ export default function App() {
               {/* Slider 1: Police Chowki Expansion */}
               <div style={{ marginBottom: 20, background: 'rgba(255,255,255,0.02)', padding: 16, borderRadius: 10, border: '1px solid var(--border-subtle)' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 8 }}>
-                  <span style={{ fontWeight: 700, fontSize: '0.85rem' }}>Deploy New Police Chowkis / Outposts</span>
+                  <span style={{ fontWeight: 700, fontSize: '0.85rem' }}>Hypothetical Police Chowki Addition</span>
                   <span style={{ fontFamily: 'var(--font-mono)', fontWeight: 800, color: '#38bdf8' }}>+{simChowkis} Chowkis</span>
                 </div>
                 <input 
@@ -619,7 +644,7 @@ export default function App() {
               {/* Slider 2: Smart Street Lighting & CCTV */}
               <div style={{ marginBottom: 20, background: 'rgba(255,255,255,0.02)', padding: 16, borderRadius: 10, border: '1px solid var(--border-subtle)' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 8 }}>
-                  <span style={{ fontWeight: 700, fontSize: '0.85rem' }}>High-Mast Smart LED Lighting & CCTV Boost</span>
+                  <span style={{ fontWeight: 700, fontSize: '0.85rem' }}>Hypothetical Lighting & Surveillance Coverage</span>
                   <span style={{ fontFamily: 'var(--font-mono)', fontWeight: 800, color: '#10b981' }}>+{simLighting}% Coverage</span>
                 </div>
                 <input 
@@ -634,14 +659,14 @@ export default function App() {
                 <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.7rem', color: 'var(--text-muted)', marginTop: 4 }}>
                   <span>0%</span>
                   <span>+25% Lighting</span>
-                  <span>+50% Full Corridor Luminescence</span>
+                  <span>+50% Full Luminescence</span>
                 </div>
               </div>
 
               {/* Toggle: Foot Patrol Intensity */}
               <div style={{ marginBottom: 20, background: 'rgba(255,255,255,0.02)', padding: 16, borderRadius: 10, border: '1px solid var(--border-subtle)' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 8 }}>
-                  <span style={{ fontWeight: 700, fontSize: '0.85rem' }}>Nirbhaya Night Beat Scheduling</span>
+                  <span style={{ fontWeight: 700, fontSize: '0.85rem' }}>Patrol Beat Intensity (Scenario)</span>
                   <span style={{ fontFamily: 'var(--font-mono)', fontWeight: 800, color: '#f59e0b', textTransform: 'capitalize' }}>{simPatrol}</span>
                 </div>
                 <div style={{ display: 'flex', gap: 10 }}>
@@ -686,19 +711,19 @@ export default function App() {
               <div className="glass-panel" style={{ padding: 24, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                 <div>
                   <div style={{ fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--text-muted)', fontWeight: 700 }}>
-                    Simulated Impact Forecast
+                    Hypothetical Scenario Projection
                   </div>
                   <h3 style={{ fontSize: '1.4rem', fontWeight: 800, marginTop: 4 }}>
-                    {selectedLocality.locality} Intervention Projection
+                    {selectedLocality.locality} Planning Scenario
                   </h3>
-                  <p style={{ fontSize: '0.82rem', color: 'var(--text-secondary)', marginBottom: 20 }}>
-                    Based on empirical sensitivity matrices calibrated from 538 Mumbai wards.
-                  </p>
+                  <div style={{ background: 'rgba(245, 158, 11, 0.08)', borderLeft: '3px solid #f59e0b', padding: '8px 12px', borderRadius: '0 6px 6px 0', fontSize: '0.78rem', color: '#fde68a', marginBottom: 16 }}>
+                    <b>Planning Heuristic:</b> Simulates hypothetical changes using assumed coefficients (-1.45 pts/chowki, -2.2 pts/lighting upgrade). These demonstrate resource trade-offs and do <b>not</b> guarantee real-world crime reduction.
+                  </div>
 
                   {/* Before vs After Comparison Card */}
                   <div style={{ display: 'grid', gridTemplateColumns: '1fr auto 1fr', gap: 16, alignItems: 'center', background: 'rgba(255,255,255,0.02)', padding: 20, borderRadius: 12, border: '1px solid var(--border-subtle)', marginBottom: 20 }}>
                     <div style={{ textAlign: 'center' }}>
-                      <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)', textTransform: 'uppercase', fontWeight: 700 }}>CURRENT RISK</div>
+                      <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)', textTransform: 'uppercase', fontWeight: 700 }}>CURRENT SCORE</div>
                       <div style={{ fontSize: '2.4rem', fontWeight: 800, fontFamily: 'var(--font-mono)', color: simResults.oldTier === 'High' ? '#f43f5e' : '#f59e0b' }}>
                         {simResults.baseRisk.toFixed(1)}
                       </div>
@@ -715,7 +740,7 @@ export default function App() {
                     </div>
 
                     <div style={{ textAlign: 'center' }}>
-                      <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)', textTransform: 'uppercase', fontWeight: 700 }}>PROJECTED RISK</div>
+                      <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)', textTransform: 'uppercase', fontWeight: 700 }}>PROJECTED SCORE</div>
                       <div style={{ fontSize: '2.4rem', fontWeight: 800, fontFamily: 'var(--font-mono)', color: simResults.newTier === 'High' ? '#f43f5e' : simResults.newTier === 'Medium' ? '#f59e0b' : '#10b981' }}>
                         {simResults.newRisk.toFixed(1)}
                       </div>
@@ -728,38 +753,38 @@ export default function App() {
                   {/* Impact Summary Table */}
                   <div style={{ marginBottom: 20 }}>
                     <h4 style={{ fontSize: '0.82rem', fontWeight: 700, color: 'var(--text-muted)', textTransform: 'uppercase', marginBottom: 10 }}>
-                      Factor Sensitivity Attribution
+                      Assumed Coefficient Breakdown
                     </h4>
                     
                     <div style={{ display: 'flex', justifyContent: 'space-between', padding: '8px 0', borderBottom: '1px solid var(--border-subtle)', fontSize: '0.82rem' }}>
-                      <span>Police Chowki Deficit Relief ({simChowkis} added):</span>
+                      <span>Police Chowki Expansion ({simChowkis} added @ -1.45 pts):</span>
                       <strong style={{ color: '#10b981', fontFamily: 'var(--font-mono)' }}>-{(simChowkis * 1.45).toFixed(1)} pts</strong>
                     </div>
 
                     <div style={{ display: 'flex', justifyContent: 'space-between', padding: '8px 0', borderBottom: '1px solid var(--border-subtle)', fontSize: '0.82rem' }}>
-                      <span>High-Mast Lighting & CCTV Deterrence (+{simLighting}%):</span>
+                      <span>Lighting & CCTV Boost (+{simLighting}% @ -2.2 pts max):</span>
                       <strong style={{ color: '#10b981', fontFamily: 'var(--font-mono)' }}>-{((simLighting / 100) * 2.2).toFixed(1)} pts</strong>
                     </div>
 
                     <div style={{ display: 'flex', justifyContent: 'space-between', padding: '8px 0', borderBottom: '1px solid var(--border-subtle)', fontSize: '0.82rem' }}>
-                      <span>Nirbhaya Night Beat Density ({simPatrol}):</span>
+                      <span>Patrol Beat Intensity ({simPatrol}):</span>
                       <strong style={{ color: '#10b981', fontFamily: 'var(--font-mono)' }}>-{simPatrol === 'intensive' ? '1.1' : '0.4'} pts</strong>
                     </div>
 
                     <div style={{ display: 'flex', justifyContent: 'space-between', padding: '10px 0', fontSize: '0.9rem', fontWeight: 800 }}>
-                      <span>Total Expected Vulnerability Reduction:</span>
+                      <span>Total Projected Index Shift:</span>
                       <strong style={{ color: '#10b981', fontFamily: 'var(--font-mono)' }}>-{simResults.totalReduction.toFixed(1)} points</strong>
                     </div>
                   </div>
                 </div>
 
-                {/* BMC Municipal Action Order */}
+                {/* BMC Municipal Planning Scenario Summary */}
                 <div style={{ background: 'rgba(56, 189, 248, 0.08)', border: '1px solid rgba(56, 189, 248, 0.25)', borderRadius: 10, padding: 14 }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: 8, color: '#38bdf8', fontWeight: 700, fontSize: '0.85rem', marginBottom: 4 }}>
-                    <FileText size={16} /> Official Municipal Planning Docket
+                    <FileText size={16} /> Municipal Planning Scenario Summary
                   </div>
                   <p style={{ fontSize: '0.78rem', color: 'var(--text-secondary)' }}>
-                    Ready for submission to Brihanmumbai Municipal Corporation (BMC) Ward {selectedLocality.ward} Standing Committee for 2026-27 infrastructure capex approval.
+                    Hypothetical planning draft for discussion with Ward {selectedLocality.ward} officers regarding patrol scheduling and lighting priorities.
                   </p>
                 </div>
 
@@ -829,61 +854,70 @@ export default function App() {
         )}
 
         {/* ─────────────────────────────────────────────────────────────
-            VIEW 4: MODEL BENCHMARK & 100-POINT RUBRIC STRATEGY
+            VIEW 4: METHOD SELECTION & COMPOSITE INDICATOR FIDELITY
         ───────────────────────────────────────────────────────────── */}
         {activeTab === 'benchmark' && (
           <div>
             <div style={{ marginBottom: 24 }}>
-              <h2 style={{ fontSize: '1.5rem', fontWeight: 800 }}>Model Benchmark & Scientific Integrity</h2>
+              <h2 style={{ fontSize: '1.5rem', fontWeight: 800 }}>Analytical Method & Baseline Comparison</h2>
               <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-                Comparing Naive Baseline vs. Regularized Ridge vs. Random Forest Ensemble on 20% Out-of-Sample Holdout.
+                Comparing Naive Per-Capita Crime Baseline vs. Formula-Derived Composite Demonstration Indicator.
+              </p>
+            </div>
+
+            {/* Formula Decomposition Card */}
+            <div className="glass-panel" style={{ padding: 24, marginBottom: 24 }}>
+              <h3 style={{ fontSize: '1.1rem', fontWeight: 800, marginBottom: 12 }}>
+                Documented Composite Indicator Formula
+              </h3>
+              <div style={{ background: 'rgba(15, 23, 42, 0.8)', border: '1px solid var(--border-subtle)', borderRadius: 10, padding: 16, fontFamily: 'var(--font-mono)', fontSize: '0.85rem', color: '#bae6fd', lineHeight: 1.6, marginBottom: 14 }}>
+                risk_index = 6.2726 + 0.1136·(total_crimes) - 0.000072·(population_density) + 0.4013·(police_density) + 0.9224·(uhi_index) - 0.0870·(internet_pct)
+              </div>
+              <p style={{ fontSize: '0.82rem', color: 'var(--text-secondary)', lineHeight: 1.6 }}>
+                <b>Audit & Integrity Note:</b> The dataset's risk index is a formula-derived demonstration score. Training an ML model on these exact inputs achieves R² = 1.000 because it simply reconstructs the linear formula. Rather than making misleading claims about 99.7% crime predictability, CityPulse presents this formula transparently as an administrative decision-support indicator.
               </p>
             </div>
 
             {/* Benchmark Table Card */}
             <div className="glass-panel" style={{ padding: 24, marginBottom: 24 }}>
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800, marginBottom: 16 }}>
-                Holdout Validation Benchmark Matrix (20% Stratified Test Split)
+                Indicator Comparison: Naive Baseline vs. Composite Indicator
               </h3>
 
               <div className="data-table-container">
                 <table className="data-table">
                   <thead>
                     <tr>
-                      <th>Candidate Model</th>
-                      <th>Architecture & Parameters</th>
-                      <th>Features Ingested</th>
-                      <th>MAE (Error)</th>
+                      <th>Method Name</th>
+                      <th>Method Type</th>
+                      <th>Inputs Ingested</th>
+                      <th>MAE</th>
                       <th>RMSE</th>
-                      <th>R² Variance Explained</th>
+                      <th>R² Fit</th>
                       <th>Spearman Rank (ρ)</th>
-                      <th>Status</th>
+                      <th>Evaluation Role</th>
                     </tr>
                   </thead>
                   <tbody>
                     {benchmark.models.map((m, idx) => (
-                      <tr key={idx} style={{ background: idx === 2 ? 'rgba(56, 189, 248, 0.05)' : 'transparent' }}>
-                        <td style={{ fontWeight: 700, color: idx === 2 ? '#38bdf8' : '#f8fafc' }}>
+                      <tr key={idx} style={{ background: idx === 1 ? 'rgba(56, 189, 248, 0.05)' : 'transparent' }}>
+                        <td style={{ fontWeight: 700, color: idx === 1 ? '#38bdf8' : '#f8fafc' }}>
                           {m.name}
                         </td>
                         <td>{m.type}</td>
                         <td style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>{m.features_used}</td>
                         <td style={{ fontFamily: 'var(--font-mono)', fontWeight: 700 }}>{m.mae}</td>
                         <td style={{ fontFamily: 'var(--font-mono)' }}>{m.rmse}</td>
-                        <td style={{ fontFamily: 'var(--font-mono)', fontWeight: 700, color: idx === 2 ? '#10b981' : '#f8fafc' }}>
+                        <td style={{ fontFamily: 'var(--font-mono)', fontWeight: 700, color: idx === 1 ? '#10b981' : '#f8fafc' }}>
                           {m.r2}
                         </td>
                         <td style={{ fontFamily: 'var(--font-mono)', fontWeight: 700, color: '#38bdf8' }}>
                           {m.spearman_rho}
                         </td>
                         <td>
-                          {idx === 2 ? (
-                            <span className="badge badge-emerald">Champion Model</span>
-                          ) : idx === 1 ? (
-                            <span className="badge badge-blue">Interpretable</span>
-                          ) : (
-                            <span className="badge" style={{ background: 'rgba(255,255,255,0.05)', color: 'var(--text-muted)' }}>Baseline</span>
-                          )}
+                          <span className={`badge ${idx === 1 ? 'badge-blue' : ''}`} style={{ background: idx === 0 ? 'rgba(255,255,255,0.05)' : undefined, color: idx === 0 ? 'var(--text-muted)' : undefined }}>
+                            {m.role || (idx === 1 ? 'Demonstration Indicator' : 'Baseline')}
+                          </span>
                         </td>
                       </tr>
                     ))}
@@ -892,25 +926,23 @@ export default function App() {
               </div>
             </div>
 
-            {/* Feature Importances Grid */}
+            {/* Feature Weights Grid */}
             <div className="glass-panel" style={{ padding: 24, marginBottom: 24 }}>
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800, marginBottom: 8 }}>
-                Random Forest Feature Importance Weights
+                Composite Indicator Term Weights
               </h3>
               <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: 16 }}>
-                Gini impurity reduction across 100 decision estimators, demonstrating which urban signals dictate risk.
+                Exact mathematical coefficients assigned to structural features in the demonstration index.
               </p>
 
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 14 }}>
-                {feature_importances.slice(0, 8).map((fi, i) => (
+                {feature_importances.map((fi, i) => (
                   <div key={i} style={{ background: 'rgba(255,255,255,0.02)', padding: '12px 14px', borderRadius: 8, border: '1px solid var(--border-subtle)' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.8rem', marginBottom: 4 }}>
                       <span style={{ fontWeight: 600 }}>{fi.feature.replace(/_/g, ' ')}</span>
-                      <strong style={{ fontFamily: 'var(--font-mono)', color: '#38bdf8' }}>{fi.rf_importance_pct}%</strong>
+                      <strong style={{ fontFamily: 'var(--font-mono)', color: '#38bdf8' }}>{fi.ridge_coefficient > 0 ? `+${fi.ridge_coefficient}` : fi.ridge_coefficient}</strong>
                     </div>
-                    <div className="attr-bar-bg">
-                      <div className="attr-bar-fill" style={{ width: `${fi.rf_importance_pct}%`, background: '#38bdf8' }} />
-                    </div>
+                    <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>{fi.role || 'Linear term'}</div>
                   </div>
                 ))}
               </div>

@@ -1,6 +1,7 @@
 import os
 import sqlite3
 from datetime import datetime
+from urllib.parse import quote
 
 import folium
 import pandas as pd
@@ -253,12 +254,32 @@ def build_map(df, show_high, show_med, show_low, selected_locality=None,
         lat0, lon0, zoom = user_lat, user_lon, 13
 
     m = folium.Map(location=[lat0, lon0], zoom_start=zoom, tiles=None, prefer_canvas=True)
-    if MAP_TILE == "dark":   # OSM-data based dark basemap (CARTO)
+
+    # Store your CARTO key in Streamlit Cloud → App settings → Secrets:
+    # CARTO_API_KEY = "your_key_here"
+    # Local development: use .streamlit/secrets.toml or CARTO_API_KEY env var.
+    try:
+        carto_api_key = st.secrets.get("CARTO_API_KEY", "")
+    except (FileNotFoundError, KeyError):
+        carto_api_key = ""
+    carto_api_key = str(carto_api_key or os.getenv("CARTO_API_KEY", "")).strip()
+
+    if carto_api_key:
+        # CARTO requires ?key= on each raster tile URL (dark and light).
+        style = "dark_all" if MAP_TILE == "dark" else "light_all"
+        tile_url = (
+            f"https://basemaps.cartocdn.com/rastertiles/{style}/"
+            "{z}/{x}/{y}.png?key=" + quote(carto_api_key, safe="")
+        )
         folium.TileLayer(
-            tiles="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
-            attr='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-            name="Dark basemap", subdomains="abcd", max_zoom=19, control=False).add_to(m)
+            tiles=tile_url,
+            attr='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="https://carto.com/attribution/">CARTO</a>',
+            name="CARTO Dark" if MAP_TILE == "dark" else "CARTO Light",
+            max_zoom=19,
+            control=False,
+        ).add_to(m)
     else:
+        # Without a key, avoid CARTO's "API KEY REQUIRED" watermark.
         folium.TileLayer("OpenStreetMap", name="OpenStreetMap", control=False).add_to(m)
 
     mapped = df.dropna(subset=["lat", "lon"])

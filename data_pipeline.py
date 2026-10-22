@@ -20,7 +20,11 @@ from scipy.stats import spearmanr
 # 1. LOAD & AUDIT RAW DATASET
 # ─────────────────────────────────────────────────────────────
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-CSV_PATH = os.path.join(BASE_DIR, "_reference_repo", "mumbai_women_safety.csv")
+CSV_PATH = os.path.join(BASE_DIR, "mumbai_urban_safety.csv")
+if not os.path.exists(CSV_PATH):
+    CSV_PATH = os.path.join(BASE_DIR, "mumbai_women_safety.csv")
+if not os.path.exists(CSV_PATH):
+    CSV_PATH = os.path.join(BASE_DIR, "_reference_repo", "mumbai_women_safety.csv")
 
 if not os.path.exists(CSV_PATH):
     raise FileNotFoundError(f"Source dataset not found at {CSV_PATH}")
@@ -47,6 +51,8 @@ col_map = {
     "police_density": "police_density",
     "police_density_cat": "police_density_cat",
     "women safety index": "safety_index",
+    "urban safety index": "safety_index",
+    "safety index": "safety_index",
     "risk index": "risk_index"
 }
 df = df_raw.rename(columns=col_map).copy()
@@ -239,7 +245,7 @@ eda_finding_2 = {
     "id": "DISCOVERY_02",
     "title": "Built-Environment Density & Incident Association",
     "headline": f"High-UHI built corridors exhibit 1.8x higher reported incidents, with a statistically significant moderate correlation (Spearman ρ = {corr_uhi_risk:.2f}, p < 1e-15).",
-    "takeaway": "Urban Heat Island index serves as an environmental proxy for dense, paved, built-up corridors with low vegetative cover. Localities in the highest UHI category average 12.2 crimes against women compared to 6.7 in low-UHI zones (1.8x ratio). This empirical correlation highlights the value of municipal lighting and streetscape design, but represents an environmental association rather than thermal causation.",
+    "takeaway": "Urban Heat Island index serves as an environmental proxy for dense, paved, built-up corridors with low vegetative cover. Localities in the highest UHI category average 12.2 recorded safety incidents compared to 6.7 in low-UHI zones (1.8x ratio; baseline indicator: crimes against women subset). This empirical correlation highlights the value of municipal lighting and streetscape design, but represents an environmental association rather than thermal causation.",
     "metric": f"1.8x Incident Ratio (Spearman ρ = {corr_uhi_risk:.2f})",
     "spearman_rho": round(corr_uhi_risk, 3)
 }
@@ -348,9 +354,9 @@ def generate_actions(row):
     if risk >= 15.0:
         actions.append({
             "priority": "P1 - Critical Intervention",
-            "action": "Immediate Nirbhaya Mobile Van Patrol",
+            "action": "Immediate Dedicated Mobile Van Patrol",
             "schedule": "Night Beat (20:00 – 04:00 daily)",
-            "details": f"High incident frequency ({row['crimes_against_women']} cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+            "details": f"High recorded incident frequency ({row['crimes_against_women']} cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         })
         actions.append({
             "priority": "P1 - Infrastructure",
@@ -382,7 +388,7 @@ def generate_actions(row):
             "priority": "P3 - Preventive Maintenance",
             "action": "Routine Patrol & Community Safety Audits",
             "schedule": "Bi-weekly Police-Resident Meetings",
-            "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+            "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         })
     return actions
 
@@ -432,9 +438,9 @@ MUMBAI_POLICE_STATIONS = [
 
 curated_payload = {
     "metadata": {
-        "title": "CityPulse Mumbai: Urban Safety & Civic Infrastructure Prioritization System",
+        "title": "CityPulse Mumbai: Urban Safety & City Intelligence Platform",
         "competition": "HackAMatch 1.0 — Data Science + AI Challenge",
-        "dataset_name": "Mumbai Locality Women Safety & Infrastructure Vulnerability Index",
+        "dataset_name": "Mumbai Locality Urban Safety & Infrastructure Vulnerability Index",
         "city": "Greater Mumbai",
         "total_localities": len(df),
         "total_population": int(df["population"].sum()),
@@ -444,7 +450,8 @@ curated_payload = {
         "high_risk_count": int((df["risk_tier"] == "High").sum()),
         "medium_risk_count": int((df["risk_tier"] == "Medium").sum()),
         "safe_count": int((df["risk_tier"] == "Low").sum()),
-        "generated_timestamp": "2026-10-22T23:30:00Z"
+        "lower_priority_count": int((df["risk_tier"] == "Low").sum()),
+        "generated_timestamp": "2026-10-23T00:00:00Z"
     },
     "benchmark": {
         "description": "Comparative analysis: Naive unweighted per-capita crime rate compared against the formula-derived Composite Vulnerability Indicator. This score is an administrative demonstration indicator, not an empirical probability of criminal incidence.",

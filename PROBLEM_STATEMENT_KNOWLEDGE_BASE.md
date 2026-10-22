@@ -1,9 +1,9 @@
-# CityPulse: Predict. Explain. Act.
+# CityPulse Mumbai: Predict. Explain. Act.
 ## Official Problem Statement Knowledge Base & Strategic Guardrails
-**Competition:** HackAMatch 1.0 — Data Science + AI Challenge  
+**Repository:** `citypulse-mumbai` (`https://github.com/JaivalKatira/women-safety-map---mumbai-v1.git`)  
+**Project Category:** Civic Technology, Urban Analytics, and Data Science  
+**Description:** A data-driven urban safety and city intelligence platform for exploring locality-level indicators, visualizing geographic patterns, and evaluating hypothetical infrastructure-planning scenarios.  
 **Track:** Urban Computing & AI Decision Support  
-**Version:** 1.0 (Live Reference & Compliance Guardrail)  
-**Status:** Canonical Source of Truth for Project Development  
 
 ---
 

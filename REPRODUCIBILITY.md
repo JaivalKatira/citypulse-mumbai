@@ -1,5 +1,8 @@
-# CityPulse Mumbai: Reproducibility & Judge Evaluation Guide
-**HackAMatch 1.0 — Data Science + AI Challenge**  
+# CityPulse Mumbai: Reproducibility & Evaluation Guide
+
+**Repository:** `citypulse-mumbai` (`https://github.com/JaivalKatira/women-safety-map---mumbai-v1.git`)  
+**Project Category:** Civic Technology, Urban Analytics, and Data Science  
+**Description:** A data-driven urban safety and city intelligence platform for exploring locality-level indicators, visualizing geographic patterns, and evaluating hypothetical infrastructure-planning scenarios.  
 **Track:** Urban Computing & AI Decision Support  
 **Official Rule Compliance:** Section 4 & 11 (Zero-Cost, Public Data, Free-Tier Reproducibility)  
 
@@ -7,28 +10,44 @@
 
 ## 1. Quick Verification (One-Command Launch)
 
-Judges can launch and test the full application locally in under 60 seconds with **zero paid keys, zero credit cards, and zero proprietary dependencies**.
+Judges and evaluators can launch and test the full application locally in under 60 seconds with **zero paid keys, zero credit cards, and zero proprietary dependencies**.
 
 ### Prerequisites
 - Node.js (v18+) & npm
 - Python (3.10+) with `pandas`, `scikit-learn`, `scipy`
 
-### Step 1: Clone & Install
+### Step 1: Clone the Repository
 ```bash
-# Clone the repository
-git clone <REPO_URL>
-cd CityPulse
-
-# Install frontend dependencies
-cd client
-npm install
+git clone https://github.com/JaivalKatira/women-safety-map---mumbai-v1.git citypulse-mumbai
+cd citypulse-mumbai
 ```
 
-### Step 2: Start the Modern Decision Cockpit
+### Step 2: Install & Run (Root or Client Directory)
+
+**Option A: From the repository root (recommended):**
 ```bash
-# Run local dev server
+# Install frontend dependencies
+npm --prefix client install
+
+# Run static analysis and linting (0 errors, 0 warnings across 104 rules)
+npm run lint
+
+# Compile production bundle (production build in <1s)
+npm run build
+
+# Start local development server
 npm run dev
 ```
+
+**Option B: From the `client/` subdirectory:**
+```bash
+cd client
+npm install
+npm run lint
+npm run build
+npm run dev
+```
+
 Open **`http://localhost:5173/`** in your browser.
 
 ---
@@ -63,11 +82,12 @@ Saved cleaned benchmark CSV to citypulse_mumbai_cleaned.csv
 
 ---
 
-## 3. Compliance Verification Checklist for Technical Judges
+## 3. Compliance Verification Checklist for Technical Evaluators
 
-- [x] **Zero Paid APIs:** Uses OpenStreetMap (ODbL) and CartoDB Dark Matter public tiles. No Google Maps, Mapbox, or OpenAI paid billing keys required.
+- [x] **Zero Paid APIs:** Uses OpenStreetMap (ODbL) and CARTO Positron public tiles. No Google Maps, Mapbox, or OpenAI paid billing keys required.
 - [x] **Analytical Integrity:** Avoids circular 99.7% ML claims by mathematically decomposing the composite indicator formula ($R^2=1.000$) and benchmarking it against an independent Naive baseline ($R^2=0.754, \rho=0.879$).
-- [x] **Benchmark Baseline Included:** Transparent Naive Per-Capita Crime baseline ($\text{crimes}/\text{pop} \times 10,000$) formally benchmarked against the multi-criteria indicator.
-- [x] **Decision Support vs. Data Display:** Features an interactive **Municipal Planning Scenario Explorer** allowing heuristic sensitivity testing of capital outlays (auxiliary chowkis, smart LED lighting).
+- [x] **Benchmark Baseline Included:** Transparent Naive Per-Capita Crime baseline ($\text{incidents}/\text{pop} \times 10,000$) formally benchmarked against the multi-criteria indicator.
+- [x] **Decision Support vs. Data Display:** Features an interactive **Municipal Planning Scenario Explorer** allowing heuristic sensitivity testing of capital outlays (auxiliary chowkis, smart LED lighting, night patrols).
+- [x] **Dynamic Data Ingestion:** Supports upload and schema mapping for custom CSV, JSON, and GeoJSON files with auto-detection and data quality auditing.
 - [x] **Uncertainty & Explainability:** Every locality displays an analytical 95% Confidence Interval ($\pm 0.70$) and closed-form factor attribution bars.
-- [x] **Responsible AI & Provenance Disclaimers:** Prominent emergency disclaimers (Police 100/112, Women Helpline 1091), hypothetical simulator labels, reporting friction bias analysis, and clear distinction between traceable OSM entities and demonstration compilation records.
+- [x] **Responsible AI & Provenance Disclaimers:** Prominent emergency disclaimers (Police 100/112, Citizen Helpline 103/1090, BMC Disaster 1916), hypothetical simulator labels, reporting friction bias analysis, and clear distinction between traceable OSM entities and demonstration compilation records.

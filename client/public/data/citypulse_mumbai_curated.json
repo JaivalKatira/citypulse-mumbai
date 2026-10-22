@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "title": "CityPulse Mumbai: Urban Safety & Civic Infrastructure Prioritization System",
+    "title": "CityPulse Mumbai: Urban Safety & City Intelligence Platform",
     "competition": "HackAMatch 1.0 \u2014 Data Science + AI Challenge",
-    "dataset_name": "Mumbai Locality Women Safety & Infrastructure Vulnerability Index",
+    "dataset_name": "Mumbai Locality Urban Safety & Infrastructure Vulnerability Index",
     "city": "Greater Mumbai",
     "total_localities": 538,
     "total_population": 10551511,
@@ -12,7 +12,8 @@
     "high_risk_count": 137,
     "medium_risk_count": 202,
     "safe_count": 199,
-    "generated_timestamp": "2026-10-22T23:30:00Z"
+    "lower_priority_count": 199,
+    "generated_timestamp": "2026-10-23T00:00:00Z"
   },
   "benchmark": {
     "description": "Comparative analysis: Naive unweighted per-capita crime rate compared against the formula-derived Composite Vulnerability Indicator. This score is an administrative demonstration indicator, not an empirical probability of criminal incidence.",
@@ -115,7 +116,7 @@
       "id": "DISCOVERY_02",
       "title": "Built-Environment Density & Incident Association",
       "headline": "High-UHI built corridors exhibit 1.8x higher reported incidents, with a statistically significant moderate correlation (Spearman \u03c1 = 0.36, p < 1e-15).",
-      "takeaway": "Urban Heat Island index serves as an environmental proxy for dense, paved, built-up corridors with low vegetative cover. Localities in the highest UHI category average 12.2 crimes against women compared to 6.7 in low-UHI zones (1.8x ratio). This empirical correlation highlights the value of municipal lighting and streetscape design, but represents an environmental association rather than thermal causation.",
+      "takeaway": "Urban Heat Island index serves as an environmental proxy for dense, paved, built-up corridors with low vegetative cover. Localities in the highest UHI category average 12.2 recorded safety incidents compared to 6.7 in low-UHI zones (1.8x ratio; baseline indicator: crimes against women subset). This empirical correlation highlights the value of municipal lighting and streetscape design, but represents an environmental association rather than thermal causation.",
       "metric": "1.8x Incident Ratio (Spearman \u03c1 = 0.36)",
       "spearman_rho": 0.362
     },
@@ -255,9 +256,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (17 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (17 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -495,7 +496,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -547,7 +548,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -655,9 +656,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (18 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (18 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -721,7 +722,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -773,7 +774,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -823,9 +824,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (21 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (21 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -1003,9 +1004,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (18 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (18 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -1069,7 +1070,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -1121,7 +1122,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -1173,7 +1174,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -1225,7 +1226,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -1335,7 +1336,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -1387,7 +1388,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -1611,9 +1612,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (19 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (19 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -1677,7 +1678,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -1729,7 +1730,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -1839,7 +1840,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -1891,7 +1892,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -1943,7 +1944,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -1995,7 +1996,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -2047,7 +2048,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -2215,7 +2216,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -2497,9 +2498,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (17 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (17 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -2561,9 +2562,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (14 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (14 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -2859,7 +2860,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -2911,7 +2912,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -2963,7 +2964,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -3015,7 +3016,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -3067,7 +3068,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -3119,7 +3120,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -3171,7 +3172,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -3223,7 +3224,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -3275,7 +3276,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -3327,7 +3328,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -3379,7 +3380,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -3431,7 +3432,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -3541,7 +3542,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -3591,9 +3592,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (18 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (18 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -3657,7 +3658,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -3709,7 +3710,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -3761,7 +3762,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -3813,7 +3814,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -3865,7 +3866,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -3917,7 +3918,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -3969,7 +3970,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -4021,7 +4022,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -4073,7 +4074,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -4125,7 +4126,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -4177,7 +4178,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -4287,7 +4288,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -4339,7 +4340,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -4391,7 +4392,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -4443,7 +4444,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -4495,7 +4496,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -4547,7 +4548,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -4599,7 +4600,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -4651,7 +4652,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -4703,7 +4704,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -4755,7 +4756,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -4807,7 +4808,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -4859,7 +4860,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -4911,7 +4912,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -4963,7 +4964,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -5015,7 +5016,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -5067,7 +5068,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -5119,7 +5120,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -5171,7 +5172,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -5223,7 +5224,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -5333,7 +5334,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -5385,7 +5386,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -5495,7 +5496,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -5547,7 +5548,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -5599,7 +5600,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -5651,7 +5652,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -5703,7 +5704,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -5755,7 +5756,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -5865,7 +5866,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -5917,7 +5918,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -6027,7 +6028,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -6079,7 +6080,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -6131,7 +6132,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -6183,7 +6184,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -6293,7 +6294,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -6345,7 +6346,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -6397,7 +6398,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -6449,7 +6450,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -6617,7 +6618,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -6841,9 +6842,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (20 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (20 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -6965,7 +6966,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -7133,7 +7134,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -7301,7 +7302,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -7353,7 +7354,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -7403,9 +7404,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (20 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (20 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -7467,9 +7468,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (19 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (19 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -7531,9 +7532,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (17 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (17 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -7595,9 +7596,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (19 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (19 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -7659,9 +7660,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (15 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (15 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -7955,9 +7956,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (15 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (15 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -8021,7 +8022,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -8187,9 +8188,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (14 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (14 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -8483,9 +8484,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (15 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (15 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -8547,9 +8548,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (21 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (21 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -8611,9 +8612,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (16 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (16 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -8967,7 +8968,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -9019,7 +9020,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -9071,7 +9072,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -9353,9 +9354,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (18 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (18 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -9417,9 +9418,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (18 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (18 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -9481,9 +9482,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (16 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (16 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -9545,9 +9546,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (17 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (17 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -9609,9 +9610,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (20 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (20 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -9673,9 +9674,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (21 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (21 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -9737,9 +9738,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (16 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (16 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -9859,9 +9860,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (18 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (18 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -9925,7 +9926,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -10033,9 +10034,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (20 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (20 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -10213,9 +10214,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (18 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (18 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -10279,7 +10280,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -10331,7 +10332,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -10441,7 +10442,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -10493,7 +10494,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -10545,7 +10546,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -10597,7 +10598,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -10649,7 +10650,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -10759,7 +10760,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -10869,7 +10870,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -10979,7 +10980,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -11089,7 +11090,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -11141,7 +11142,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -11251,7 +11252,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -11303,7 +11304,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -11413,7 +11414,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -11465,7 +11466,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -11517,7 +11518,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -11569,7 +11570,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -11621,7 +11622,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -11845,9 +11846,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (21 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (21 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -11911,7 +11912,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -11961,9 +11962,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (17 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (17 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -12143,7 +12144,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -12193,9 +12194,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (19 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (19 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -12605,9 +12606,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (18 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (18 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -12669,9 +12670,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (18 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (18 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -12791,9 +12792,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (19 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (19 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -12855,9 +12856,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (17 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (17 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -13443,7 +13444,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -13611,7 +13612,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -13835,9 +13836,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (17 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (17 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -13899,9 +13900,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (24 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (24 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -14021,9 +14022,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (22 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (22 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -14085,9 +14086,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (21 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (21 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -14207,9 +14208,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (18 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (18 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -14271,9 +14272,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (23 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (23 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -14395,7 +14396,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -14851,9 +14852,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (20 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (20 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -14973,9 +14974,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (21 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (21 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -15037,9 +15038,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (22 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (22 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -15101,9 +15102,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (18 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (18 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -15165,9 +15166,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (16 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (16 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -15229,9 +15230,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (24 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (24 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -15293,9 +15294,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (19 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (19 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -15357,9 +15358,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (19 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (19 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -15421,9 +15422,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (17 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (17 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -15485,9 +15486,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (19 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (19 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -15607,9 +15608,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (20 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (20 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -15671,9 +15672,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (24 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (24 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -15735,9 +15736,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (19 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (19 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -15915,9 +15916,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (21 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (21 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -15979,9 +15980,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (18 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (18 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -16043,9 +16044,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (20 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (20 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -16107,9 +16108,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (18 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (18 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -16231,7 +16232,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -16281,9 +16282,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (18 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (18 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -16347,7 +16348,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -16397,9 +16398,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (18 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (18 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -16461,9 +16462,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (21 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (21 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -16641,9 +16642,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (20 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (20 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -16705,9 +16706,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (21 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (21 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -16769,9 +16770,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (17 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (17 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -16833,9 +16834,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (22 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (22 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -16897,9 +16898,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (19 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (19 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -16961,9 +16962,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (21 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (21 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -17025,9 +17026,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (20 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (20 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -17205,9 +17206,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (23 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (23 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -17269,9 +17270,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (19 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (19 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -17333,9 +17334,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (20 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (20 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -17399,7 +17400,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -17449,9 +17450,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (24 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (24 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -17571,9 +17572,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (22 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (22 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -17635,9 +17636,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (23 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (23 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -17701,7 +17702,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -17751,9 +17752,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (16 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (16 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -17815,9 +17816,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (21 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (21 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -17881,7 +17882,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -17931,9 +17932,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (21 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (21 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -17995,9 +17996,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (22 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (22 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -18177,7 +18178,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -18461,7 +18462,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -18571,7 +18572,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -18623,7 +18624,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -18675,7 +18676,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -18901,7 +18902,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -18951,9 +18952,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (16 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (16 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -19017,7 +19018,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -19127,7 +19128,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -19293,9 +19294,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (18 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (18 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -19359,7 +19360,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -19759,7 +19760,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -19811,7 +19812,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -19863,7 +19864,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -20089,7 +20090,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -20141,7 +20142,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -20251,7 +20252,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -20303,7 +20304,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -20355,7 +20356,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -20637,9 +20638,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (22 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (22 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -20703,7 +20704,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -20929,7 +20930,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -21271,7 +21272,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -21381,7 +21382,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -21431,9 +21432,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (18 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (18 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -21495,9 +21496,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (17 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (17 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -21559,9 +21560,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (17 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (17 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -21625,7 +21626,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -21675,9 +21676,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (19 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (19 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -21857,7 +21858,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -22083,7 +22084,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -22133,9 +22134,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (18 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (18 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -22199,7 +22200,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -22307,9 +22308,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (21 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (21 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -22373,7 +22374,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -22483,7 +22484,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -22767,7 +22768,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -22819,7 +22820,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -22869,9 +22870,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (21 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (21 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -22933,9 +22934,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (21 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (21 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -22997,9 +22998,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (21 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (21 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -23061,9 +23062,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (21 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (21 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -23125,9 +23126,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (24 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (24 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -23189,9 +23190,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (20 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (20 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -23253,9 +23254,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (17 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (17 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -23317,9 +23318,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (22 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (22 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -23381,9 +23382,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (17 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (17 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -23503,9 +23504,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (15 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (15 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -23627,7 +23628,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -23677,9 +23678,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (22 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (22 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -23799,9 +23800,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (22 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (22 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -23863,9 +23864,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (18 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (18 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -23929,7 +23930,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -23979,9 +23980,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (19 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (19 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -24043,9 +24044,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (22 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (22 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -24107,9 +24108,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (20 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (20 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -24287,9 +24288,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (20 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (20 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -24351,9 +24352,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (16 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (16 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -24417,7 +24418,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -24585,7 +24586,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -24635,9 +24636,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (19 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (19 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -24989,9 +24990,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (16 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (16 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -25111,9 +25112,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (15 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (15 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -25177,7 +25178,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -25345,7 +25346,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -25395,9 +25396,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (21 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (21 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -25459,9 +25460,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (19 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (19 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -25639,9 +25640,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (19 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (19 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -25821,7 +25822,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -25873,7 +25874,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -25925,7 +25926,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -25975,9 +25976,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (15 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (15 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -26041,7 +26042,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -26093,7 +26094,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -26145,7 +26146,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -26253,9 +26254,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (14 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (14 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -26317,9 +26318,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (17 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (17 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -26381,9 +26382,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (16 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (16 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -26503,9 +26504,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (17 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (17 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -26625,9 +26626,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (18 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (18 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -26689,9 +26690,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (17 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (17 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -26755,7 +26756,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -26807,7 +26808,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -26857,9 +26858,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (16 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (16 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -26981,7 +26982,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -27091,7 +27092,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -27141,9 +27142,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (16 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (16 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -27207,7 +27208,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -27257,9 +27258,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (16 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (16 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -27323,7 +27324,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -27373,9 +27374,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (19 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (19 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -27439,7 +27440,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -27549,7 +27550,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -27601,7 +27602,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -27653,7 +27654,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -27705,7 +27706,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -27757,7 +27758,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -27809,7 +27810,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -27861,7 +27862,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -27911,9 +27912,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (18 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (18 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -28035,7 +28036,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -28085,9 +28086,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (16 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (16 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -28149,9 +28150,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (17 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (17 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -28215,7 +28216,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -28267,7 +28268,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -28319,7 +28320,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -28371,7 +28372,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -28423,7 +28424,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -28475,7 +28476,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -28585,7 +28586,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -28637,7 +28638,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -28803,9 +28804,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (16 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (16 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -28869,7 +28870,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -28921,7 +28922,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -28973,7 +28974,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -29025,7 +29026,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -29075,9 +29076,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (16 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (16 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -29141,7 +29142,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -29251,7 +29252,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -29361,7 +29362,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -29413,7 +29414,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -29465,7 +29466,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -29573,9 +29574,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (17 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (17 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -29639,7 +29640,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -29691,7 +29692,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -29741,9 +29742,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (17 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (17 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -29807,7 +29808,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -29857,9 +29858,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (21 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (21 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -29923,7 +29924,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -29975,7 +29976,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -30199,9 +30200,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (17 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (17 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -30497,7 +30498,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -30549,7 +30550,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -30601,7 +30602,7 @@
           "priority": "P3 - Preventive Maintenance",
           "action": "Routine Patrol & Community Safety Audits",
           "schedule": "Bi-weekly Police-Resident Meetings",
-          "details": "Locality is classified as a Safe Zone. Maintain current chowki staffing and conduct bi-weekly community safety forums."
+          "details": "Locality is classified as a Lower-Priority Area (P3 Baseline). Maintain routine chowki staffing and conduct community safety forums."
         }
       ],
       "feature_contributions": {
@@ -30709,9 +30710,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (17 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (17 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -30773,9 +30774,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (22 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (22 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -30895,9 +30896,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (21 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (21 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -30959,9 +30960,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (19 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (19 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",
@@ -31023,9 +31024,9 @@
       "recommended_actions": [
         {
           "priority": "P1 - Critical Intervention",
-          "action": "Immediate Nirbhaya Mobile Van Patrol",
+          "action": "Immediate Dedicated Mobile Van Patrol",
           "schedule": "Night Beat (20:00 \u2013 04:00 daily)",
-          "details": "High incident frequency (20 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
+          "details": "High recorded incident frequency (20 cases). Deploy dedicated mobile vigilance van to transit bottlenecks."
         },
         {
           "priority": "P1 - Infrastructure",

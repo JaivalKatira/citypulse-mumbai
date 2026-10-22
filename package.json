@@ -1,19 +1,21 @@
 {
   "name": "citypulse-mumbai",
   "version": "1.0.0",
-  "description": "CityPulse Mumbai: Locality-Level Safety Risk Prioritization and Municipal Resource Allocation Decision Support Prototype for HackAMatch 1.0",
+  "description": "A data-driven urban safety and city intelligence platform for exploring locality-level indicators, visualizing geographic patterns, and evaluating hypothetical infrastructure-planning scenarios.",
   "scripts": {
     "dev": "npm --prefix client run dev",
     "build": "npm --prefix client run build",
+    "lint": "npm --prefix client run lint",
     "preview": "npm --prefix client run preview",
     "pipeline": "py data_pipeline.py"
   },
   "keywords": [
-    "citypulse",
-    "hackamatch",
-    "urban-computing",
+    "citypulse-mumbai",
+    "urban-analytics",
+    "civic-technology",
     "decision-support",
-    "machine-learning"
+    "data-science",
+    "mumbai"
   ],
   "author": "CityPulse Team",
   "license": "MIT"
